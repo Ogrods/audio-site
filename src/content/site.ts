@@ -8,7 +8,8 @@ export const siteProfile = {
   email: "dan@danogrodnik.com",
   phone: "",
   location: "Los Angeles / Crestline, CA",
-  resumePdf: "/Dan_Ogrodnik_Audio_CV.pdf",
+  resumePdf: "/Dan_Ogrodnik_Audio_Resume.pdf",
+  cvPdf: "/Dan_Ogrodnik_Audio_CV.pdf",
   webdevUrl: "https://www.danogrodnik.com",
   bookingUrl: "",
   contactMessage:

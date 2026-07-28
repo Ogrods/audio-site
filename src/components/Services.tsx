@@ -98,12 +98,15 @@ export default function Services() {
           </div>
         </Reveal>
 
-        <Reveal delayMs={180} className="mt-10">
+        <Reveal delayMs={180} className="mt-10 flex flex-wrap gap-3">
           <a href={siteProfile.resumePdf} className="btn-primary" download>
+            Download resume (PDF)
+          </a>
+          <a href={siteProfile.cvPdf} className="btn-secondary" download>
             Download CV (PDF)
           </a>
-          <p className="mt-3 text-xs text-[var(--text-muted)]">
-            Curriculum Vitae - rewrite in progress (2026)
+          <p className="basis-full mt-1 text-xs text-[var(--text-muted)]">
+            Resume for applications · CV rewrite in progress (2026)
           </p>
         </Reveal>
       </div>

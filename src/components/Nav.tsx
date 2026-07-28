@@ -41,6 +41,9 @@ export default function Nav() {
             </a>
           ))}
           <a href={siteProfile.resumePdf} className="btn-nav" download>
+            Resume
+          </a>
+          <a href={siteProfile.cvPdf} className="btn-nav" download>
             CV
           </a>
         </nav>
@@ -74,6 +77,14 @@ export default function Nav() {
             ))}
             <a
               href={siteProfile.resumePdf}
+              className="btn-nav w-fit"
+              download
+              onClick={() => setOpen(false)}
+            >
+              Resume
+            </a>
+            <a
+              href={siteProfile.cvPdf}
               className="btn-nav w-fit"
               download
               onClick={() => setOpen(false)}
