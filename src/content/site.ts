@@ -277,15 +277,16 @@ export const videos = [
 ];
 
 export const aboutParagraphs = [
-  "Session and live percussionist with an MFA in Multi-Focus Percussion from CalArts and a BM from The Hartt School. Study includes a residency in Ghana (Dagara Music Center / Dagbe Music Center). I move between classical and contemporary repertoire and world traditions - Latin, African, Brazilian, Indian, Persian, steelpan, and more.",
-  "Credits include the West Coast premiere of John Luther Adams's Inuksuit (Ojai Music Festival, curated by Steven Schick), Hands On'Semble with Rhein Percussion at The Blue Whale, Bella Strings at The Beverly Hilton for King Salman of Saudi Arabia, and sessions at Capitol Records. Ensembles and projects include Izela, ZAUB, Sin Color, Rhein Percussion, and USC Kaufman dance accompaniment.",
-  "I also music-direct, track and mix in Pro Tools, Reaper, Ableton Live, and Logic Pro (MaxMSP for custom tools), and run live sound (FOH / monitors) when the gig calls for it. Teaching and clinics (CalArts, Evergreen) are part of the craft.",
+  "Session and live percussionist with an MFA in Multi-Focus Percussion from CalArts and a BM from The Hartt School. Study includes a residency in Ghana (Dagara Music Center / Dagbe Music Center). I work across classical and contemporary repertoire and world traditions - Latin, African, Brazilian, Indian, Persian, steelpan, and more.",
+  "For 5+ years I was a live accompanist at the USC Glorya Kaufman School of Dance - Contemporary, Afro-Cuban, Partnering, Modern, Hip-Hop, Jazz, Commercial Dance, Dunham Technique, improvisation, and guest clinicians. Instructors I've played for include Desmond Richardson, Dwight Rhoden, Patrick Corbin, Victor Quijada, and the Complexions Contemporary Ballet Summer Intensive. I've also composed and performed original music for Kaufman choreography.",
+  "Other headline credits: West Coast premiere of John Luther Adams's Inuksuit (Ojai, curated by Steven Schick); Hands On'Semble with Rhein Percussion at The Blue Whale; Bella Strings at The Beverly Hilton for King Salman of Saudi Arabia; Capitol Records sessions. Artists and projects include Izela, ZAUB, Sin Color, Kan Wakan, Sofi Mkheyan, Saba Alizadeh, Vinny Golia, and Sulley Imoro.",
+  "I music-direct, track and mix in Pro Tools, Reaper, Ableton Live, and Logic Pro (MaxMSP for custom tools), and run live sound (FOH / monitors) when the gig calls for it. Teaching and clinics (CalArts, Evergreen) are part of the craft.",
 ];
 
 export const services = [
   {
     title: "Session & live musician",
-    body: "World and classical percussion for studio dates, concerts, festivals, and theater pits. Multi-genre, chart-ready, and comfortable improvising.",
+    body: "World and classical percussion for studio dates, concerts, festivals, theater pits, and dance-class accompaniment. Multi-genre, chart-ready, and comfortable improvising.",
   },
   {
     title: "Music direction",
@@ -303,12 +304,12 @@ export const services = [
 
 export const selectedCredits = [
   "CalArts MFA (Multi-Focus Percussion); Hartt BM; Ghana residency (Dagara / Dagbe)",
+  "USC Glorya Kaufman School of Dance - live accompanist, 5+ years (Contemporary, Afro-Cuban, Hip-Hop, Jazz, and more; instructors incl. Desmond Richardson, Dwight Rhoden, Patrick Corbin, Victor Quijada; Complexions Contemporary Ballet Summer Intensive)",
   "John Luther Adams, Inuksuit - West Coast premiere, Ojai Music Festival (curated by Steven Schick)",
   "Hands On'Semble with Rhein Percussion - The Blue Whale",
   "Bella Strings - The Beverly Hilton, for King Salman of Saudi Arabia",
   "Capitol Records sessions (incl. Cross Pulses, Abuelo; Celia Cruz track selected for mastering)",
-  "Izela I; ZAUB; Sin Color; USC Glorya Kaufman School of Dance accompaniment",
-  "Theater / musical pits including The Boy from Oz and Spring Awakening",
+  "Izela I; ZAUB; Sin Color; theater pits including The Boy from Oz and Spring Awakening",
 ];
 
 export const toolsClaimed = [
