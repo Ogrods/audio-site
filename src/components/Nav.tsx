@@ -16,16 +16,16 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color] duration-300 ${
         scrolled || open
-          ? "border-b border-white/10 bg-[rgba(12,11,10,0.92)] backdrop-blur-md"
-          : "bg-transparent"
+          ? "border-b border-white/10 bg-[rgba(12,11,10,0.94)] backdrop-blur-md"
+          : "border-b border-transparent bg-gradient-to-b from-black/75 via-black/45 to-transparent"
       }`}
     >
       <div className="container-site flex h-14 items-center justify-between md:h-16">
         <a
           href="#home"
-          className="font-display text-lg tracking-[0.08em] text-[var(--text)] uppercase"
+          className="font-display text-lg tracking-[0.08em] text-white uppercase drop-shadow-[0_1px_8px_rgba(0,0,0,0.65)]"
         >
           {siteProfile.name}
         </a>
@@ -35,7 +35,7 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-xs uppercase tracking-[0.18em] text-[var(--text-muted)] transition-colors hover:text-[var(--accent)]"
+              className="text-xs uppercase tracking-[0.18em] text-white/85 drop-shadow-[0_1px_6px_rgba(0,0,0,0.55)] transition-colors hover:text-[var(--accent)]"
             >
               {link.label}
             </a>
@@ -47,7 +47,7 @@ export default function Nav() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded border border-white/20 px-3 py-1.5 text-xs uppercase tracking-[0.16em] text-[var(--text)] md:hidden"
+          className="inline-flex items-center justify-center border border-white/35 bg-black/35 px-3 py-1.5 text-xs uppercase tracking-[0.16em] text-white md:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
@@ -66,7 +66,7 @@ export default function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="py-2 text-sm uppercase tracking-[0.16em] text-[var(--text-muted)]"
+                className="py-2 text-sm uppercase tracking-[0.16em] text-white/85"
                 onClick={() => setOpen(false)}
               >
                 {link.label}

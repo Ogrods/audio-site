@@ -26,16 +26,18 @@ export default function Proof() {
           </div>
         </Reveal>
 
-        {reviews[0] ? (
-          <Reveal delayMs={120} className="mx-auto mt-12 max-w-3xl text-center">
-            <blockquote className="font-display text-xl leading-relaxed text-[var(--text)] md:text-2xl">
-              &ldquo;{reviews[0].quote.slice(0, 220)}...&rdquo;
-            </blockquote>
-            <cite className="mt-4 block text-xs uppercase tracking-[0.2em] text-[var(--accent)] not-italic">
-              - {reviews[0].source}
-            </cite>
-          </Reveal>
-        ) : null}
+        <div className="mx-auto mt-12 grid max-w-4xl gap-10 md:grid-cols-2">
+          {reviews.map((review, i) => (
+            <Reveal key={review.source} delayMs={80 + i * 80}>
+              <blockquote className="font-display text-xl leading-relaxed text-[var(--text)] md:text-2xl">
+                &ldquo;{review.quote}&rdquo;
+              </blockquote>
+              <cite className="mt-4 block text-xs uppercase tracking-[0.2em] text-[var(--accent)] not-italic">
+                - {review.source}
+              </cite>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -18,11 +18,11 @@ export default function Experience() {
             Experience
           </p>
           <h2 className="font-display text-3xl text-[var(--text)] md:text-4xl">
-            Hire for
+            What I bring
           </h2>
           <p className="mt-3 text-[var(--text-muted)]">
-            Scannable roles for live sound, studio, and direction. Game-audio
-            middleware listed as learning - not production credits.
+            Live sound, studio engineering, music direction, and performance.
+            Currently studying game-audio tools as well.
           </p>
         </Reveal>
 
@@ -62,7 +62,7 @@ export default function Experience() {
           </div>
           <div>
             <h3 className="mb-3 text-xs uppercase tracking-[0.2em] text-[var(--text)]">
-              Learning (not production)
+              Studying
             </h3>
             <p className="flex flex-wrap gap-2">
               {toolsLearning.map((t) => (
@@ -75,15 +75,15 @@ export default function Experience() {
               ))}
             </p>
             <p className="mt-3 text-sm text-[var(--text-muted)]">
-              Game jams, GameSoundCon, and apprenticeship interest (e.g. Hexany
-              Audio).
+              Building toward interactive and game audio through study, game
+              jams, and GameSoundCon.
             </p>
           </div>
         </Reveal>
 
         <Reveal delayMs={160} className="mt-10">
           <a href={siteProfile.resumePdf} className="btn-primary" download>
-            Download audio resume (PDF)
+            Download resume (PDF)
           </a>
         </Reveal>
       </div>

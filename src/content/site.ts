@@ -4,7 +4,7 @@ export const siteProfile = {
   name: "Dan Ogrodnik",
   title: "Musician · Music Director · Session & Live Engineer",
   tagline:
-    "CalArts MFA / Hartt BM. Tracking, mixing, and live sound (FOH / monitors). Open to live sound, studio, and audio apprenticeship paths.",
+    "CalArts MFA / Hartt BM. Session musician, music director, and engineer for tracking, mixing, and live sound (FOH / monitors).",
   email: "dan@danogrodnik.com",
   phone: "",
   location: "Los Angeles / Crestline, CA",
@@ -12,7 +12,7 @@ export const siteProfile = {
   webdevUrl: "https://www.danogrodnik.com",
   bookingUrl: "",
   contactMessage:
-    "Hiring for live sound, session engineering, music direction, or studio / apprenticeship work? Email me - I respond promptly.",
+    "Looking for live sound, session work, music direction, or studio support? Reach out - I respond quickly.",
   social: [
     { label: "SoundCloud", url: "https://soundcloud.com/ogrods" },
     { label: "Instagram", url: "https://instagram.com/ogrods" },
@@ -37,8 +37,13 @@ export const navLinks = [
 export const reviews = [
   {
     quote:
-      "With the success of ensembles such as Repercussion Unit, Hands On'Semble, HazMat Percussion Duo, Limbs, Duo Jalal, Rhein Percussion, and percussionists Greg Meyer, B. Michael Williams, and Shane Shanahan, among many others, world percussion compositions are increasing in quality and quantity.",
-    source: "Percussive Notes",
+      "Dan Ogrodnik's knowledge of hand drumming styles knows no bounds.",
+    source: "Iambic 5 Music & Reviews",
+  },
+  {
+    quote:
+      "The rhythm was thunderous as four percussionists created a cacophony of beats and tempo... drawing a huge ovation. This group's drum kit, bongos and an assortment of other hand percussion was unique and original.",
+    source: "Jambands.com",
   },
 ];
 
@@ -227,9 +232,9 @@ export const videos = [
 ];
 
 export const aboutParagraphs = [
-  "Classically trained percussionist with 10+ years as a professional musician, music director, session player, and session / live engineer. CalArts MFA (Multi-Focus Percussion) and Hartt BM. Multi-genre performer across classical, rock, jazz, Latin, African, Brazilian, Indian, steelpan, and more.",
-  "Active on the West Coast new music and recording scene - studios including Capitol A/B and The Getty Villa; ensembles and projects including Izela, ZAUB, Sin Color, Rhein Percussion, and many others. Music-directs ensembles, prepares charts, runs rehearsals, and keeps shows on time.",
-  "Engineers recording sessions (tracking and mixing) in Pro Tools, Reaper, Ableton Live, and Logic Pro; MaxMSP for custom tools. Runs live sound (FOH / monitors) for rehearsals, concerts, and school / theater events. Teaching and clinician work remain part of the craft, not the primary hire pitch.",
+  "Classically trained percussionist with more than ten years on stage and in the studio as a musician, music director, session player, and engineer. MFA in Multi-Focus Percussion from CalArts; BM from The Hartt School. Comfortable across classical, rock, jazz, Latin, African, Brazilian, Indian, steelpan, and more.",
+  "West Coast new music and recording credits include Capitol Studios A/B, The Getty Villa, Izela, ZAUB, Sin Color, Rhein Percussion, and many others. As an MD I prepare charts, run rehearsals, and keep shows on time.",
+  "In the room I track and mix in Pro Tools, Reaper, Ableton Live, and Logic Pro, with MaxMSP for custom tools. I also run live sound (FOH / monitors) for rehearsals, concerts, and school and theater events, and I teach and clinic when that fits the work.",
 ];
 
 export const hireFor = [
