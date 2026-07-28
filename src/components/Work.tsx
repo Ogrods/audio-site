@@ -41,8 +41,8 @@ export default function Work() {
             Listen
           </h2>
           <p className="mt-3 text-[var(--text-muted)]">
-            Session and ensemble recordings grouped by project. One player at a
-            time — full archive on SoundCloud.
+                Session and ensemble recordings grouped by project. One player at a
+            time - full archive on SoundCloud.
           </p>
         </Reveal>
 

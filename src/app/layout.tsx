@@ -12,7 +12,7 @@ const ebGaramond = EB_Garamond({
   variable: "--font-eb-garamond",
 });
 
-const title = `${siteProfile.name} — Musician, MD, Session & Live Engineer`;
+const title = `${siteProfile.name} - Musician, MD, Session & Live Engineer`;
 const description =
   "Musician, music director, and session / live engineer. CalArts MFA / Hartt BM. Available for live sound, studio work, and audio apprenticeship paths.";
 

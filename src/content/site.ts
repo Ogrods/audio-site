@@ -12,7 +12,7 @@ export const siteProfile = {
   webdevUrl: "https://www.danogrodnik.com",
   bookingUrl: "",
   contactMessage:
-    "Hiring for live sound, session engineering, music direction, or studio / apprenticeship work? Send a note — I respond promptly.",
+    "Hiring for live sound, session engineering, music direction, or studio / apprenticeship work? Send a note - I respond promptly.",
   social: [
     { label: "SoundCloud", url: "https://soundcloud.com/ogrods" },
     { label: "Instagram", url: "https://instagram.com/ogrods" },
@@ -125,7 +125,7 @@ export const soundCloudGroups: SoundCloudGroup[] = [
       },
       {
         id: "87730072",
-        title: "Asterozoa – IV. Ambulacral Groove",
+        title: "Asterozoa - IV. Ambulacral Groove",
         artist: "Paul Matthis",
         url: "https://soundcloud.com/paulmatthis/asterozoa-iv-ambulacral-groove",
       },
@@ -203,7 +203,7 @@ export const videos = [
   {
     id: "Ykh95s9pGjs",
     title: "Purushakara (Live)",
-    detail: "Izela — Handbag Factory DTLA",
+    detail: "Izela - Handbag Factory DTLA",
     kind: "youtube" as const,
   },
   {
@@ -215,20 +215,20 @@ export const videos = [
   {
     id: "17ZkbpJOKhk",
     title: "Levitation",
-    detail: "ZAUB — Live Session at Kingsize North",
+    detail: "ZAUB - Live Session at Kingsize North",
     kind: "youtube" as const,
   },
   {
     id: "jHuQBPSG2NE",
     title: "The Process of Invention",
-    detail: "Deane — California Institute of the Arts",
+    detail: "Deane - California Institute of the Arts",
     kind: "youtube" as const,
   },
 ];
 
 export const aboutParagraphs = [
   "Classically trained percussionist with 10+ years as a professional musician, music director, session player, and session / live engineer. CalArts MFA (Multi-Focus Percussion) and Hartt BM. Multi-genre performer across classical, rock, jazz, Latin, African, Brazilian, Indian, steelpan, and more.",
-  "Active on the West Coast new music and recording scene — studios including Capitol A/B and The Getty Villa; ensembles and projects including Izela, ZAUB, Sin Color, Rhein Percussion, and many others. Music-directs ensembles, prepares charts, runs rehearsals, and keeps shows on time.",
+  "Active on the West Coast new music and recording scene - studios including Capitol A/B and The Getty Villa; ensembles and projects including Izela, ZAUB, Sin Color, Rhein Percussion, and many others. Music-directs ensembles, prepares charts, runs rehearsals, and keeps shows on time.",
   "Engineers recording sessions (tracking and mixing) in Pro Tools, Reaper, Ableton Live, and Logic Pro; MaxMSP for custom tools. Runs live sound (FOH / monitors) for rehearsals, concerts, and school / theater events. Teaching and clinician work remain part of the craft, not the primary hire pitch.",
 ];
 

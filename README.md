@@ -1,23 +1,35 @@
 # Dan Ogrodnik — Audio hire site
 
-One-pager for live sound, session engineering, music direction, and related hire paths.
+One-pager for live sound, session engineering, music direction, and studio / apprenticeship paths.
 
-- **Live:** https://audio.danogrodnik.com
-- **Stack:** Next.js 15, Tailwind v4, Resend contact, Vercel Hobby
+**Live:** [audio.danogrodnik.com](https://audio.danogrodnik.com)
 
-## Local
+## Stack
+
+Next.js 15 (App Router), React 19, Tailwind CSS v4, Resend contact API, Vercel.
+
+## Develop
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Env (Vercel)
+Copy `.env.example` to `.env.local` and set Resend keys for the contact form.
 
-- `RESEND_API_KEY`
-- `CONTACT_TO_EMAIL` (default: dan.ogrodnik@gmail.com)
-- `CONTACT_FROM_EMAIL` (e.g. `Dan Ogrodnik <contact@mail.danogrodnik.com>`)
+## Deploy
 
-## Resume PDF
+```bash
+vercel
+vercel --prod
+vercel env add RESEND_API_KEY
+vercel env add CONTACT_TO_EMAIL
+vercel env add CONTACT_FROM_EMAIL
+vercel domains add audio.danogrodnik.com
+```
 
-Replace `public/Dan_Ogrodnik_Audio_Resume.pdf` when the ATS resume updates (source in employment `resumes/Dan_Ogrodnik_Audio_Resume_2026_v1_ATS.md`).
+Point Namecheap CNAME `audio` → Vercel DNS target shown in the dashboard.
+
+## Content
+
+Edit `src/content/site.ts`. Resume PDF: `public/Dan_Ogrodnik_Audio_Resume.pdf`.

@@ -22,7 +22,7 @@ export default function Experience() {
           </h2>
           <p className="mt-3 text-[var(--text-muted)]">
             Scannable roles for live sound, studio, and direction. Game-audio
-            middleware listed as learning — not production credits.
+            middleware listed as learning - not production credits.
           </p>
         </Reveal>
 

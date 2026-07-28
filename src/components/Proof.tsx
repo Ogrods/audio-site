@@ -29,10 +29,10 @@ export default function Proof() {
         {reviews[0] ? (
           <Reveal delayMs={120} className="mx-auto mt-12 max-w-3xl text-center">
             <blockquote className="font-display text-xl leading-relaxed text-[var(--text)] md:text-2xl">
-              “{reviews[0].quote.slice(0, 220)}…”
+              &ldquo;{reviews[0].quote.slice(0, 220)}...&rdquo;
             </blockquote>
             <cite className="mt-4 block text-xs uppercase tracking-[0.2em] text-[var(--accent)] not-italic">
-              — {reviews[0].source}
+              - {reviews[0].source}
             </cite>
           </Reveal>
         ) : null}

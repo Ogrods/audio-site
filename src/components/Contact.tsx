@@ -156,7 +156,7 @@ export default function Contact() {
               className="btn-primary"
               disabled={status === "submitting"}
             >
-              {status === "submitting" ? "Sending…" : "Send message"}
+              {status === "submitting" ? "Sending..." : "Send message"}
             </button>
 
             {status === "success" ? (
