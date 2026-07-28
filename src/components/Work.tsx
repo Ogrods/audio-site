@@ -161,6 +161,14 @@ export default function Work() {
                 >
                   Izela - album I on Bandcamp
                 </a>
+                <a
+                  href="https://soundcloud.com/zaubnasty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[var(--accent)] underline-offset-4 hover:underline"
+                >
+                  ZAUB on SoundCloud
+                </a>
               </div>
             </div>
           </div>
