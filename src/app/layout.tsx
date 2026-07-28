@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   authors: [{ name: siteProfile.name, url: siteUrl }],
   creator: siteProfile.name,
   robots: { index: true, follow: true },
+  verification: {
+    google: "01dBFuDQs4rDhqThCLKjstsJFAQXHeRg6QAP4e6c-Tw",
+  },
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
@@ -51,6 +54,9 @@ export const metadata: Metadata = {
     title,
     description,
     images: ["/images/og.jpg"],
+  },
+  verification: {
+    google: "01dBFuDQs4rDhqThCLKjstsJFAQXHeRg6QAP4e6c-Tw",
   },
 };
 
