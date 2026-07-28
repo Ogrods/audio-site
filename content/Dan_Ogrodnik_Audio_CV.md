@@ -9,9 +9,9 @@ izelamusic.bandcamp.com/album/i-2
 
 ---
 
-## Professional summary (resume-style)
+## Professional summary
 
-Classically trained percussionist (CalArts MFA, Multi-Focus Percussion; Hartt BM) with extensive session and live work across classical, contemporary, and world traditions. Music direction, tracking / mixing, and live sound (FOH / monitors) when needed. Ghana residency (Dagara / Dagbe). Studying Wwise / FMOD for game and interactive audio (learning path - not production credits).
+Classically trained percussionist (CalArts MFA, Multi-Focus Percussion; Hartt BM) with extensive session and live work across classical, contemporary, and world traditions. Music direction, tracking / mixing, and live sound (FOH / monitors) when needed. Ghana residency (Dagara / Dagbe). Currently studying Wwise / FMOD for game and interactive audio.
 
 **Core skills:** Session & live percussion (drum set, snare, timpani, mallets, hand drums) · Music direction (charts, cue/tempo maps, show calling) · Ableton Live click-tracked show playback and laptop performance management · Session tracking / mixing (Pro Tools, Reaper, Ableton Live, Logic Pro; MaxMSP) · Live sound (FOH / monitors) · Teaching & clinics
 
@@ -50,7 +50,7 @@ Dagara Music Center, Medie (Bernard Woma); Dagbe Music Center, Denu (Emmanuel Ag
 
 ## Performance chronology
 
-Chronology compiled from the recovered long-form CV (through 2017). Formatting cleaned; no post-2017 gigs invented.
+Selected performances through 2017. Additional credits after 2017 appear under Selected highlights and Teaching experience.
 
 ### 2017
 - Izela Live at The Bootleg Theater 12/17
@@ -465,9 +465,9 @@ Public links (ogrods account and collaborations used on the hire site):
 - Rhein Percussion clinic - CalArts Percussion Forum, 2/25/14
 - Rhein Percussion clinic - CalArts Performer/Composer Forum, 2/24/14
 
-## Ensemble memberships (from recovered CV)
+## Ensemble memberships
 
-Listed as active on the 2017 CV (historical): The Milky Way; Izela; ZAUB; Madapple; Rio de Choro; Rhein Percussion.
+The Milky Way · Izela · ZAUB · Madapple · Rio de Choro · Rhein Percussion (and others listed under Selected highlights)
 
 ## Professional memberships
 
@@ -513,7 +513,7 @@ Percussive Arts Society, 2005-present
 - Operations for a multinational talent provider (finance, personnel, sales, tech, marketing)  
 - Project management on large client contracts; primary client liaison
 
-**Los Angeles Philharmonic** - Artist Department, Jun 2013 - present (per current ATS resume)  
+**Los Angeles Philharmonic** - Artist Department, Jun 2013 - present  
 - First point of contact for visiting artists; coordinate travel, hotels, rehearsals, performances, master classes, and related events
 
 **Los Angeles Philharmonic** - Fundraising / Ticketing Associate, 2013  
@@ -537,8 +537,4 @@ Percussion Ensemble · Contemporary Percussion Ensemble · Performer/Composer ·
 
 **Production:** Pro Tools · Reaper · Ableton Live · Logic Pro · MaxMSP
 
-**Learning (not production credits):** Wwise · FMOD · Unity audio · Unreal audio / MetaSounds
-
----
-
-*Consolidated 2026 full CV from recovered long-form CV + current hire materials. Street address omitted. Contact via email / web. Chronology ends at recovered source coverage (2017); later highlights (Kaufman tenure, AGBU dates) appear in Selected highlights and Teaching.*
+**Currently studying:** Wwise · FMOD · Unity audio · Unreal audio / MetaSounds
