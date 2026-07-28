@@ -23,11 +23,29 @@ export default function Work() {
     group?.tracks[0]
   );
   const [videoId, setVideoId] = useState(videos[0]?.id ?? "");
+  const [scPlaying, setScPlaying] = useState(false);
+  const [ytPlaying, setYtPlaying] = useState(false);
+
+  const activeVideo = useMemo(
+    () => videos.find((v) => v.id === videoId) ?? videos[0],
+    [videoId]
+  );
 
   function selectGroup(id: string) {
     setGroupId(id);
     const next = soundCloudGroups.find((g) => g.id === id);
     setTrack(next?.tracks[0]);
+    setScPlaying(false);
+  }
+
+  function selectTrack(t: SoundCloudTrack) {
+    setTrack(t);
+    setScPlaying(false);
+  }
+
+  function selectVideo(id: string) {
+    setVideoId(id);
+    setYtPlaying(false);
   }
 
   return (
@@ -52,6 +70,7 @@ export default function Work() {
               <button
                 key={g.id}
                 type="button"
+                aria-pressed={groupId === g.id}
                 onClick={() => selectGroup(g.id)}
                 className={`rounded-sm px-3 py-1.5 text-xs uppercase tracking-[0.14em] transition-colors ${
                   groupId === g.id
@@ -70,7 +89,8 @@ export default function Work() {
                 <li key={t.id}>
                   <button
                     type="button"
-                    onClick={() => setTrack(t)}
+                    aria-pressed={track?.id === t.id}
+                    onClick={() => selectTrack(t)}
                     className={`w-full rounded-sm px-3 py-2.5 text-left transition-colors ${
                       track?.id === t.id
                         ? "bg-white/10 text-[var(--text)]"
@@ -86,18 +106,43 @@ export default function Work() {
 
             <div className="lg:col-span-8">
               {track ? (
-                <iframe
-                  key={track.id}
-                  title={`${track.title} on SoundCloud`}
-                  width="100%"
-                  height="166"
-                  scrolling="no"
-                  frameBorder="no"
-                  allow="autoplay"
-                  loading="lazy"
-                  src={playerSrc(track.id)}
-                  className="w-full bg-black/30"
-                />
+                scPlaying ? (
+                  <iframe
+                    key={track.id}
+                    title={`${track.title} on SoundCloud`}
+                    width="100%"
+                    height="166"
+                    scrolling="no"
+                    frameBorder="no"
+                    allow="autoplay"
+                    src={playerSrc(track.id)}
+                    className="w-full bg-black/30"
+                  />
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setScPlaying(true)}
+                    className="flex h-[166px] w-full flex-col items-start justify-center gap-2 border border-white/15 bg-black/40 px-6 text-left transition-colors hover:border-[var(--accent)]"
+                    aria-label={`Load SoundCloud player for ${track.title}`}
+                  >
+                    <span className="text-xs uppercase tracking-[0.18em] text-[var(--accent)]">
+                      SoundCloud
+                    </span>
+                    <span className="font-display text-xl text-[var(--text)] md:text-2xl">
+                      {track.title}
+                    </span>
+                    <span className="text-sm text-[var(--text-muted)]">
+                      {track.artist}
+                    </span>
+                    <span className="mt-2 inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-[var(--text)]">
+                      <span
+                        className="inline-block border-l-[10px] border-y-[6px] border-y-transparent border-l-[var(--accent)]"
+                        aria-hidden
+                      />
+                      Play embed
+                    </span>
+                  </button>
+                )
               ) : null}
               <div className="mt-4 flex flex-wrap gap-4 text-sm">
                 <a
@@ -114,7 +159,7 @@ export default function Work() {
                   rel="noopener noreferrer"
                   className="text-[var(--accent)] underline-offset-4 hover:underline"
                 >
-                  Izela — album I on Bandcamp
+                  Izela - album I on Bandcamp
                 </a>
               </div>
             </div>
@@ -131,7 +176,8 @@ export default function Work() {
                 <li key={v.id}>
                   <button
                     type="button"
-                    onClick={() => setVideoId(v.id)}
+                    aria-pressed={videoId === v.id}
+                    onClick={() => selectVideo(v.id)}
                     className={`w-full rounded-sm px-3 py-2.5 text-left transition-colors ${
                       videoId === v.id
                         ? "bg-white/10 text-[var(--text)]"
@@ -144,17 +190,58 @@ export default function Work() {
                 </li>
               ))}
             </ul>
-            <div className="aspect-video overflow-hidden bg-black lg:col-span-8">
-              {videoId ? (
-                <iframe
-                  key={videoId}
-                  title="Selected video"
-                  src={`https://www.youtube.com/embed/${videoId}`}
-                  className="h-full w-full"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
+            <div className="lg:col-span-8">
+              <div className="aspect-video overflow-hidden bg-black">
+                {activeVideo ? (
+                  ytPlaying ? (
+                    <iframe
+                      key={activeVideo.id}
+                      title={`${activeVideo.title} - ${activeVideo.detail}`}
+                      src={`https://www.youtube-nocookie.com/embed/${activeVideo.id}?autoplay=1`}
+                      className="h-full w-full"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={() => setYtPlaying(true)}
+                      className="group relative block h-full w-full"
+                      aria-label={`Play video: ${activeVideo.title}`}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element -- facade poster from YT CDN before iframe loads */}
+                      <img
+                        src={`https://i.ytimg.com/vi/${activeVideo.id}/hqdefault.jpg`}
+                        alt=""
+                        className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <span className="absolute inset-0 bg-black/35" aria-hidden />
+                      <span
+                        className="absolute left-1/2 top-1/2 flex h-14 w-14 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-[var(--accent)] text-[var(--bg)] shadow-lg transition-transform group-hover:scale-105"
+                        aria-hidden
+                      >
+                        <span className="ml-1 inline-block border-l-[14px] border-y-[9px] border-y-transparent border-l-[var(--bg)]" />
+                      </span>
+                      <span className="absolute bottom-3 left-3 right-3 text-left text-sm text-white drop-shadow">
+                        {activeVideo.title}
+                      </span>
+                    </button>
+                  )
+                ) : null}
+              </div>
+              {activeVideo?.relatedUrl ? (
+                <p className="mt-3 text-sm">
+                  <a
+                    href={activeVideo.relatedUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--accent)] underline-offset-4 hover:underline"
+                  >
+                    {activeVideo.relatedLabel ?? "Related link"}
+                  </a>
+                </p>
               ) : null}
             </div>
           </div>

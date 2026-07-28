@@ -16,16 +16,16 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 pt-[env(safe-area-inset-top)] transition-[background-color,box-shadow] duration-300 ${
         scrolled || open
           ? "bg-[rgba(12,11,10,0.94)] shadow-[0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md"
           : "bg-gradient-to-b from-black/80 via-black/40 to-transparent"
       }`}
     >
-      <div className="container-site flex h-14 items-center justify-between md:h-16">
+      <div className="container-site flex h-14 items-center justify-between gap-3 md:h-16">
         <a
           href="#home"
-          className="font-display text-lg tracking-[0.08em] text-white uppercase drop-shadow-[0_1px_8px_rgba(0,0,0,0.65)]"
+          className="min-w-0 max-w-[calc(100%-5.5rem)] truncate font-display text-base tracking-[0.08em] text-white uppercase drop-shadow-[0_1px_8px_rgba(0,0,0,0.65)] sm:text-lg md:max-w-none"
         >
           {siteProfile.name}
         </a>

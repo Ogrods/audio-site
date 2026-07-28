@@ -26,7 +26,7 @@ export default function Contact() {
             {siteProfile.location}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a href={mailto} className="btn-primary">
+            <a href={mailto} className="btn-primary w-full text-center sm:w-auto">
               Email {siteProfile.email}
             </a>
             <a

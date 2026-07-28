@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { reviews } from "@/content/site";
 
-const INTERVAL_MS = 6000;
+const INTERVAL_MS = 10000;
 
 export default function QuoteSlideshow() {
   const rootRef = useRef<HTMLDivElement>(null);
@@ -64,9 +64,6 @@ export default function QuoteSlideshow() {
     return () => window.clearInterval(id);
   }, [inView, paused, reduceMotion]);
 
-  const review = reviews[index];
-  if (!review) return null;
-
   return (
     <div
       ref={rootRef}
@@ -74,22 +71,28 @@ export default function QuoteSlideshow() {
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="relative min-h-[9rem] md:min-h-[8rem]">
-        <blockquote
-          className={`font-display text-xl leading-relaxed text-[var(--text)] transition-opacity duration-500 md:text-2xl ${
-            fade || reduceMotion ? "opacity-100" : "opacity-0"
-          }`}
-          aria-live="polite"
-        >
-          &ldquo;{review.quote}&rdquo;
-        </blockquote>
-        <cite
-          className={`mt-4 block text-xs uppercase tracking-[0.2em] text-[var(--accent)] not-italic transition-opacity duration-500 ${
-            fade || reduceMotion ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          - {review.source}
-        </cite>
+      {/* Grid stack: all slides share one cell so height = tallest quote */}
+      <div className="grid" aria-live="polite">
+        {reviews.map((review, i) => {
+          const active = i === index;
+          const visible = active && (fade || reduceMotion);
+          return (
+            <div
+              key={review.source}
+              className={`col-start-1 row-start-1 transition-opacity duration-500 ${
+                visible ? "opacity-100" : "opacity-0"
+              } ${active ? "relative z-10" : "pointer-events-none z-0"}`}
+              aria-hidden={!active}
+            >
+              <blockquote className="font-display text-xl leading-relaxed text-[var(--text)] md:text-2xl">
+                &ldquo;{review.quote}&rdquo;
+              </blockquote>
+              <cite className="mt-4 block text-xs uppercase tracking-[0.2em] text-[var(--accent)] not-italic">
+                - {review.source}
+              </cite>
+            </div>
+          );
+        })}
       </div>
 
       <div className="mt-6 flex items-center gap-3">
@@ -109,9 +112,6 @@ export default function QuoteSlideshow() {
         >
           Next
         </button>
-        <span className="text-xs text-[var(--text-muted)]">
-          {index + 1} / {reviews.length}
-        </span>
       </div>
     </div>
   );

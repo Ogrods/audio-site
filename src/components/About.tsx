@@ -14,6 +14,7 @@ export default function About() {
             src="/images/about.jpg"
             alt="Dan Ogrodnik"
             fill
+            quality={75}
             sizes="(max-width: 1024px) 100vw, 40vw"
             className="object-cover"
           />
@@ -25,7 +26,8 @@ export default function About() {
               About
             </p>
             <h2 className="font-display text-3xl text-[var(--text)] md:text-4xl">
-              Session and live musician - with ears for the room.
+              Session and live musician - with ears for{" "}
+              <span className="whitespace-nowrap">the room.</span>
             </h2>
           </Reveal>
           <div className="mt-6 space-y-5">

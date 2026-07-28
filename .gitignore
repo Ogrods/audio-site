@@ -44,3 +44,6 @@ next-env.d.ts
 .env*.tmp
 .env.vercel*
 
+# Local-only recovered CVs (contain street address / personal details - do not publish)
+/content/sources/
+

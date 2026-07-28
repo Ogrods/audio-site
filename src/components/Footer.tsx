@@ -10,7 +10,7 @@ export default function Footer() {
           © {year} {siteProfile.name}
         </p>
         <div className="flex flex-wrap gap-4 text-sm text-[var(--text-muted)]">
-          {siteProfile.social.slice(0, 3).map((s) => (
+          {siteProfile.social.map((s) => (
             <a
               key={s.url}
               href={s.url}

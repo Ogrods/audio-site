@@ -51,7 +51,12 @@ export default function Services() {
           <ul className="max-w-3xl space-y-3 text-sm leading-relaxed text-[var(--text-muted)] md:text-base">
             {selectedCredits.map((c) => (
               <li key={c} className="flex gap-3">
-                <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--accent)]" />
+                <span
+                  className="flex h-[1.625em] w-3 shrink-0 items-center justify-center"
+                  aria-hidden
+                >
+                  <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
+                </span>
                 <span>{c}</span>
               </li>
             ))}
@@ -106,7 +111,7 @@ export default function Services() {
             Download CV (PDF)
           </a>
           <p className="basis-full mt-1 text-xs text-[var(--text-muted)]">
-            Resume for applications · CV rewrite in progress (2026)
+            Resume for applications · Full CV available
           </p>
         </Reveal>
       </div>

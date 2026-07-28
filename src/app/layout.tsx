@@ -6,15 +6,14 @@ import "./globals.css";
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: ["400", "700"],
   display: "swap",
   variable: "--font-eb-garamond",
 });
 
 const title = `${siteProfile.name} - Musician, MD, Session & Live Engineer`;
 const description =
-  "Musician, music director, and session / live engineer. CalArts MFA / Hartt BM. Available for live sound, studio work, and audio apprenticeship paths.";
+  "Session and live musician, music director, and session / live engineer. CalArts MFA / Hartt BM. Available for hire in Los Angeles / Crestline.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/images/hero.jpg",
+        url: "/images/og.jpg",
         width: 1200,
         height: 630,
         alt: title,
@@ -47,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/hero.jpg"],
+    images: ["/images/og.jpg"],
   },
 };
 
