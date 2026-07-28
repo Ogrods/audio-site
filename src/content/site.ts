@@ -5,14 +5,14 @@ export const siteProfile = {
   title: "Musician · Music Director · Session & Live Engineer",
   tagline:
     "CalArts MFA / Hartt BM. Tracking, mixing, and live sound (FOH / monitors). Open to live sound, studio, and audio apprenticeship paths.",
-  email: "dan.ogrodnik@gmail.com",
+  email: "dan@danogrodnik.com",
   phone: "",
   location: "Los Angeles / Crestline, CA",
   resumePdf: "/Dan_Ogrodnik_Audio_Resume.pdf",
   webdevUrl: "https://www.danogrodnik.com",
   bookingUrl: "",
   contactMessage:
-    "Hiring for live sound, session engineering, music direction, or studio / apprenticeship work? Send a note - I respond promptly.",
+    "Hiring for live sound, session engineering, music direction, or studio / apprenticeship work? Email me - I respond promptly.",
   social: [
     { label: "SoundCloud", url: "https://soundcloud.com/ogrods" },
     { label: "Instagram", url: "https://instagram.com/ogrods" },

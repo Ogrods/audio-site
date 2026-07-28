@@ -1,4 +1,4 @@
-# Dan Ogrodnik — Audio hire site
+# Dan Ogrodnik - Audio hire site
 
 One-pager for live sound, session engineering, music direction, and studio / apprenticeship paths.
 
@@ -6,7 +6,7 @@ One-pager for live sound, session engineering, music direction, and studio / app
 
 ## Stack
 
-Next.js 15 (App Router), React 19, Tailwind CSS v4, Resend contact API, Vercel.
+Next.js 15 (App Router), React 19, Tailwind CSS v4, Vercel. Contact is mailto to `dan@danogrodnik.com` (no form API).
 
 ## Develop
 
@@ -15,20 +15,13 @@ npm install
 npm run dev
 ```
 
-Copy `.env.example` to `.env.local` and set Resend keys for the contact form.
-
 ## Deploy
 
 ```bash
-vercel
 vercel --prod
-vercel env add RESEND_API_KEY
-vercel env add CONTACT_TO_EMAIL
-vercel env add CONTACT_FROM_EMAIL
-vercel domains add audio.danogrodnik.com
 ```
 
-Point Namecheap CNAME `audio` → Vercel DNS target shown in the dashboard.
+DNS: Namecheap A record `audio` → `76.76.21.21`.
 
 ## Content
 
