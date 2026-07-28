@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Proof from "@/components/Proof";
 import Work from "@/components/Work";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
+import Services from "@/components/Services";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -19,7 +19,7 @@ export default function Home() {
         <Proof />
         <Work />
         <About />
-        <Experience />
+        <Services />
         <Contact />
       </main>
       <Footer />

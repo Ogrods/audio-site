@@ -1,50 +1,67 @@
 import Reveal from "@/components/Reveal";
 import {
-  hireFor,
+  selectedCredits,
+  services,
   siteProfile,
   toolsClaimed,
   toolsLearning,
 } from "@/content/site";
 
-export default function Experience() {
+export default function Services() {
   return (
     <section
-      id="experience"
+      id="services"
       className="scroll-mt-16 bg-[var(--bg)] py-20 md:py-28"
     >
       <div className="container-site">
         <Reveal className="mb-10 max-w-2xl">
           <p className="mb-3 text-xs uppercase tracking-[0.24em] text-[var(--accent)]">
-            Experience
+            Services
           </p>
           <h2 className="font-display text-3xl text-[var(--text)] md:text-4xl">
-            What I bring
+            What I offer
           </h2>
           <p className="mt-3 text-[var(--text-muted)]">
-            Live sound, studio engineering, music direction, and performance.
-            Currently studying game-audio tools as well.
+            Session and live musician work first - with direction and
+            engineering when you need the room covered too.
           </p>
         </Reveal>
 
         <div className="grid gap-8 sm:grid-cols-2">
-          {hireFor.map((block, i) => (
-            <Reveal key={block.title} delayMs={i * 70} className="border-t border-white/10 pt-5">
+          {services.map((block, i) => (
+            <Reveal
+              key={block.title}
+              delayMs={i * 70}
+              className="border-t border-white/10 pt-5"
+            >
               <h3 className="font-display text-xl text-[var(--text)]">
                 {block.title}
               </h3>
-              <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--text-muted)]">
-                {block.bullets.map((b) => (
-                  <li key={b} className="flex gap-2">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--accent)]" />
-                    <span>{b}</span>
-                  </li>
-                ))}
-              </ul>
+              <p className="mt-3 text-sm leading-relaxed text-[var(--text-muted)]">
+                {block.body}
+              </p>
             </Reveal>
           ))}
         </div>
 
-        <Reveal delayMs={120} className="mt-12 grid gap-8 border-t border-white/10 pt-10 md:grid-cols-2">
+        <Reveal delayMs={100} className="mt-14 border-t border-white/10 pt-10">
+          <h3 className="mb-4 font-display text-2xl text-[var(--text)]">
+            Selected credits
+          </h3>
+          <ul className="max-w-3xl space-y-3 text-sm leading-relaxed text-[var(--text-muted)] md:text-base">
+            {selectedCredits.map((c) => (
+              <li key={c} className="flex gap-3">
+                <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--accent)]" />
+                <span>{c}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
+        <Reveal
+          delayMs={140}
+          className="mt-12 grid gap-8 border-t border-white/10 pt-10 md:grid-cols-2"
+        >
           <div>
             <h3 className="mb-3 text-xs uppercase tracking-[0.2em] text-[var(--text)]">
               Tools
@@ -75,16 +92,19 @@ export default function Experience() {
               ))}
             </p>
             <p className="mt-3 text-sm text-[var(--text-muted)]">
-              Building toward interactive and game audio through study, game
-              jams, and GameSoundCon.
+              Building interactive / game-audio skills through study, jams, and
+              GameSoundCon.
             </p>
           </div>
         </Reveal>
 
-        <Reveal delayMs={160} className="mt-10">
+        <Reveal delayMs={180} className="mt-10">
           <a href={siteProfile.resumePdf} className="btn-primary" download>
-            Download resume (PDF)
+            Download CV (PDF)
           </a>
+          <p className="mt-3 text-xs text-[var(--text-muted)]">
+            Curriculum Vitae - rewrite in progress (2026)
+          </p>
         </Reveal>
       </div>
     </section>

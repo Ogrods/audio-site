@@ -37,7 +37,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={siteProfile.resumePdf} className="btn-primary" download>
-              Download resume
+              Download CV
             </a>
             <a href="#contact" className="btn-secondary">
               Contact

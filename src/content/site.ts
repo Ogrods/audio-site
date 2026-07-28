@@ -2,17 +2,17 @@ export const siteUrl = "https://audio.danogrodnik.com";
 
 export const siteProfile = {
   name: "Dan Ogrodnik",
-  title: "Musician · Music Director · Session & Live Engineer",
+  title: "Session & Live Musician · Music Director · Session & Live Engineer",
   tagline:
-    "CalArts MFA / Hartt BM. Session musician, music director, and engineer for tracking, mixing, and live sound (FOH / monitors).",
+    "CalArts MFA / Hartt BM. World and classical percussion for sessions, stages, and pits - with music direction and tracking / live sound when the room needs it.",
   email: "dan@danogrodnik.com",
   phone: "",
   location: "Los Angeles / Crestline, CA",
-  resumePdf: "/Dan_Ogrodnik_Audio_Resume.pdf",
+  resumePdf: "/Dan_Ogrodnik_Audio_CV.pdf",
   webdevUrl: "https://www.danogrodnik.com",
   bookingUrl: "",
   contactMessage:
-    "Looking for live sound, session work, music direction, or studio support? Reach out - I respond quickly.",
+    "Booking session or live musician work, music direction, or studio / live sound support? Email me - I respond quickly.",
   social: [
     { label: "SoundCloud", url: "https://soundcloud.com/ogrods" },
     { label: "Instagram", url: "https://instagram.com/ogrods" },
@@ -30,7 +30,7 @@ export const siteProfile = {
 export const navLinks = [
   { href: "#work", label: "Work" },
   { href: "#about", label: "About" },
-  { href: "#experience", label: "Experience" },
+  { href: "#services", label: "Services" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -47,13 +47,58 @@ export const reviews = [
   },
 ];
 
-export const proofImages = [
-  { src: "/images/proof/proof-1.jpeg", alt: "Performance still" },
-  { src: "/images/proof/proof-2.jpg", alt: "Stage still" },
-  { src: "/images/proof/proof-3.jpeg", alt: "Ensemble still" },
-  { src: "/images/proof/proof-4.jpeg", alt: "Studio still" },
-  { src: "/images/proof/proof-5.jpeg", alt: "Live performance" },
-  { src: "/images/proof/proof-6.jpeg", alt: "Percussion setup" },
+export type ProofImage = {
+  src: string;
+  alt: string;
+  objectPosition?: string;
+};
+
+export const proofImages: ProofImage[] = [
+  {
+    src: "/images/proof/c-01.jpeg",
+    alt: "Playing outdoor hand drum",
+    objectPosition: "center 20%",
+  },
+  {
+    src: "/images/proof/c-02.jpg",
+    alt: "Studio session group",
+    objectPosition: "center center",
+  },
+  {
+    src: "/images/proof/c-03.jpeg",
+    alt: "Marimba performance",
+    objectPosition: "center 30%",
+  },
+  {
+    src: "/images/proof/c-04.jpg",
+    alt: "Playing carved wooden drum",
+    objectPosition: "35% center",
+  },
+  {
+    src: "/images/proof/c-05.jpeg",
+    alt: "Percussion ensemble on stage",
+    objectPosition: "center 40%",
+  },
+  {
+    src: "/images/proof/c-06.jpg",
+    alt: "World music ensemble",
+    objectPosition: "center center",
+  },
+  {
+    src: "/images/proof/c-07.jpg",
+    alt: "Live percussion quartet",
+    objectPosition: "center 35%",
+  },
+  {
+    src: "/images/proof/c-08.jpg",
+    alt: "Outdoor tambourine",
+    objectPosition: "70% center",
+  },
+  {
+    src: "/images/proof/c-09.jpg",
+    alt: "Tabla performance",
+    objectPosition: "center 35%",
+  },
 ];
 
 export type SoundCloudTrack = {
@@ -232,44 +277,38 @@ export const videos = [
 ];
 
 export const aboutParagraphs = [
-  "Classically trained percussionist with more than ten years on stage and in the studio as a musician, music director, session player, and engineer. MFA in Multi-Focus Percussion from CalArts; BM from The Hartt School. Comfortable across classical, rock, jazz, Latin, African, Brazilian, Indian, steelpan, and more.",
-  "West Coast new music and recording credits include Capitol Studios A/B, The Getty Villa, Izela, ZAUB, Sin Color, Rhein Percussion, and many others. As an MD I prepare charts, run rehearsals, and keep shows on time.",
-  "In the room I track and mix in Pro Tools, Reaper, Ableton Live, and Logic Pro, with MaxMSP for custom tools. I also run live sound (FOH / monitors) for rehearsals, concerts, and school and theater events, and I teach and clinic when that fits the work.",
+  "Session and live percussionist with an MFA in Multi-Focus Percussion from CalArts and a BM from The Hartt School. Study includes a residency in Ghana (Dagara Music Center / Dagbe Music Center). I move between classical and contemporary repertoire and world traditions - Latin, African, Brazilian, Indian, Persian, steelpan, and more.",
+  "Credits include the West Coast premiere of John Luther Adams's Inuksuit (Ojai Music Festival, curated by Steven Schick), Hands On'Semble with Rhein Percussion at The Blue Whale, Bella Strings at The Beverly Hilton for King Salman of Saudi Arabia, and sessions at Capitol Records. Ensembles and projects include Izela, ZAUB, Sin Color, Rhein Percussion, and USC Kaufman dance accompaniment.",
+  "I also music-direct, track and mix in Pro Tools, Reaper, Ableton Live, and Logic Pro (MaxMSP for custom tools), and run live sound (FOH / monitors) when the gig calls for it. Teaching and clinics (CalArts, Evergreen) are part of the craft.",
 ];
 
-export const hireFor = [
+export const services = [
   {
-    title: "Live sound",
-    bullets: [
-      "FOH and monitors for rehearsals, concerts, and events",
-      "Load-in / load-out, stage management, show pacing",
-      "Instrument inventory and tech support",
-    ],
-  },
-  {
-    title: "Session engineer",
-    bullets: [
-      "Tracking and recording sessions",
-      "Mixing in Pro Tools, Reaper, Ableton, Logic",
-      "MaxMSP for custom tools and experiments",
-    ],
+    title: "Session & live musician",
+    body: "World and classical percussion for studio dates, concerts, festivals, and theater pits. Multi-genre, chart-ready, and comfortable improvising.",
   },
   {
     title: "Music direction",
-    bullets: [
-      "Ensemble direction and rehearsal leadership",
-      "Charts, cues, and on-time show delivery",
-      "Artist logistics and production ops experience (incl. LA Phil artist desk)",
-    ],
+    body: "Ensemble direction, chart prep, rehearsals, cues, and show pacing so the night stays on time.",
   },
   {
-    title: "Musician",
-    bullets: [
-      "Session percussion across classical, contemporary, and world contexts",
-      "Improvisation and multi-genre adaptability",
-      "Credits include Izela album I on Bandcamp",
-    ],
+    title: "Session & live engineering",
+    body: "Tracking and mixing in Pro Tools, Reaper, Ableton, and Logic. Live sound for FOH and monitors, plus load-in and stage support.",
   },
+  {
+    title: "Teaching & clinics",
+    body: "Private study, classroom work, and guest masterclasses - including CalArts Percussion Forum and school clinics.",
+  },
+];
+
+export const selectedCredits = [
+  "CalArts MFA (Multi-Focus Percussion); Hartt BM; Ghana residency (Dagara / Dagbe)",
+  "John Luther Adams, Inuksuit - West Coast premiere, Ojai Music Festival (curated by Steven Schick)",
+  "Hands On'Semble with Rhein Percussion - The Blue Whale",
+  "Bella Strings - The Beverly Hilton, for King Salman of Saudi Arabia",
+  "Capitol Records sessions (incl. Cross Pulses, Abuelo; Celia Cruz track selected for mastering)",
+  "Izela I; ZAUB; Sin Color; USC Glorya Kaufman School of Dance accompaniment",
+  "Theater / musical pits including The Boy from Oz and Spring Awakening",
 ];
 
 export const toolsClaimed = [
@@ -285,5 +324,4 @@ export const toolsLearning = [
   "FMOD",
   "Unity audio",
   "Unreal audio / MetaSounds",
-  "Interactive music implementation",
 ];

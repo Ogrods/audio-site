@@ -57,7 +57,7 @@ const personJsonLd = {
   name: siteProfile.name,
   url: siteUrl,
   email: `mailto:${siteProfile.email}`,
-  jobTitle: "Musician, Music Director, Session and Live Engineer",
+  jobTitle: "Session and Live Musician, Music Director, Session and Live Engineer",
   description,
   address: {
     "@type": "PostalAddress",
