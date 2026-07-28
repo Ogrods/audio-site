@@ -104,10 +104,18 @@ export default function Services() {
         </Reveal>
 
         <Reveal delayMs={180} className="mt-10 flex flex-wrap gap-3">
-          <a href={siteProfile.resumePdf} className="btn-primary" download>
+          <a
+            href={siteProfile.resumePdf}
+            className="resume-button btn-primary"
+            download
+          >
             Download resume (PDF)
           </a>
-          <a href={siteProfile.cvPdf} className="btn-secondary" download>
+          <a
+            href={siteProfile.cvPdf}
+            className="resume-button btn-secondary"
+            download
+          >
             Download CV (PDF)
           </a>
           <p className="basis-full mt-1 text-xs text-[var(--text-muted)]">

@@ -40,10 +40,14 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
-          <a href={siteProfile.resumePdf} className="btn-nav" download>
+          <a
+            href={siteProfile.resumePdf}
+            className="resume-button btn-nav"
+            download
+          >
             Resume
           </a>
-          <a href={siteProfile.cvPdf} className="btn-nav" download>
+          <a href={siteProfile.cvPdf} className="resume-button btn-nav" download>
             CV
           </a>
         </nav>
@@ -77,7 +81,7 @@ export default function Nav() {
             ))}
             <a
               href={siteProfile.resumePdf}
-              className="btn-nav w-fit"
+              className="resume-button btn-nav w-fit"
               download
               onClick={() => setOpen(false)}
             >
@@ -85,7 +89,7 @@ export default function Nav() {
             </a>
             <a
               href={siteProfile.cvPdf}
-              className="btn-nav w-fit"
+              className="resume-button btn-nav w-fit"
               download
               onClick={() => setOpen(false)}
             >
