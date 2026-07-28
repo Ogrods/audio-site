@@ -16,10 +16,10 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color] duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,box-shadow] duration-300 ${
         scrolled || open
-          ? "border-b border-white/10 bg-[rgba(12,11,10,0.94)] backdrop-blur-md"
-          : "border-b border-transparent bg-gradient-to-b from-black/75 via-black/45 to-transparent"
+          ? "bg-[rgba(12,11,10,0.94)] shadow-[0_1px_0_rgba(255,255,255,0.08)] backdrop-blur-md"
+          : "bg-gradient-to-b from-black/80 via-black/40 to-transparent"
       }`}
     >
       <div className="container-site flex h-14 items-center justify-between md:h-16">

@@ -15,7 +15,7 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_30%]"
+          className="object-cover object-[center_68%]"
         />
         <div className="hero-scrim absolute inset-0" aria-hidden />
         <div className="hero-grain absolute inset-0" aria-hidden />

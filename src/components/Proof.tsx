@@ -18,7 +18,7 @@ export default function Proof() {
                   alt={img.alt}
                   fill
                   sizes="(max-width: 768px) 50vw, 16vw"
-                  className="object-cover opacity-90 transition-opacity duration-500 hover:opacity-100"
+                  className="object-cover object-center opacity-90 transition-opacity duration-500 hover:opacity-100"
                   style={{ transitionDelay: `${i * 40}ms` }}
                 />
               </div>
