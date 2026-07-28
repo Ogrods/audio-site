@@ -55,9 +55,6 @@ export const metadata: Metadata = {
     description,
     images: ["/images/og.jpg"],
   },
-  verification: {
-    google: "01dBFuDQs4rDhqThCLKjstsJFAQXHeRg6QAP4e6c-Tw",
-  },
 };
 
 const personJsonLd = {
