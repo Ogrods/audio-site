@@ -1,41 +1,35 @@
-# Audio site deploy
+# Deploy notes — audio.danogrodnik.com
 
 ## Live URLs
 
 - Production alias: https://audio-site-theta.vercel.app
-- Custom domain (after DNS): https://audio.danogrodnik.com
-- GitHub: https://github.com/Ogrods/audio-site
+- Custom domain (on project, verified in Vercel): `audio.danogrodnik.com`
 
-## Namecheap DNS (required once)
+## DNS (Namecheap)
 
-In Namecheap → Domain List → `danogrodnik.com` → Manage → Advanced DNS, add:
+Vercel expects:
 
-| Type | Host | Value | TTL |
-|------|------|-------|-----|
-| CNAME | `audio` | `e27d5c0a0be3f5df.vercel-dns-017.com.` | Automatic |
-
-(Fallback if Vercel shows a different target: `cname.vercel-dns.com.`)
-
-Then run:
-
-```powershell
-cd audio-site
-vercel domains verify audio.danogrodnik.com
+```
+Type: A
+Host: audio
+Value: 76.76.21.21
+TTL: Automatic
 ```
 
-## Resend env (required for contact form)
+(Optional CNAME alternative some setups use: `audio` → `cname.vercel-dns.com`)
 
-Vercel project `audio-site` needs the same keys as the webdev portfolio. Sensitive `RESEND_API_KEY` cannot be pulled from Vercel CLI, so add it manually:
+## Environment variables (Sensitive — must set in dashboard)
 
-1. Resend → API Keys → copy `re_...` (or create one scoped to `mail.danogrodnik.com`)
-2. Vercel → `audio-site` → Settings → Environment Variables:
+Portfolio vars are marked **Sensitive** and cannot be pulled/copied via CLI/API. In Vercel → **audio-site** → Settings → Environment Variables, add for Production + Preview:
 
 | Name | Value |
-|------|-------|
-| `RESEND_API_KEY` | `re_...` |
-| `CONTACT_TO_EMAIL` | `Dan.Ogrodnik@gmail.com` |
+|------|--------|
+| `RESEND_API_KEY` | Same `re_...` as `personal-website-next` (or a new key from Resend) |
+| `CONTACT_TO_EMAIL` | `dan.ogrodnik@gmail.com` |
 | `CONTACT_FROM_EMAIL` | `Dan Ogrodnik <contact@mail.danogrodnik.com>` |
 
-3. Redeploy: `vercel --prod`
+Then redeploy: `vercel --prod`
 
-`CONTACT_TO` / `CONTACT_FROM` may already be set via CLI.
+## Repo
+
+https://github.com/Ogrods/audio-site
