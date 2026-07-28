@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { EB_Garamond } from "next/font/google";
 import DeferredAnalytics from "@/components/DeferredAnalytics";
-import GoogleTagManager from "@/components/GoogleTagManager";
+import {
+  GoogleTagManagerNoscript,
+  gtmHeadScript,
+} from "@/components/GoogleTagManager";
 import { siteProfile, siteUrl } from "@/content/site";
 import "./globals.css";
 
@@ -80,13 +83,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${ebGaramond.variable}`}>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: gtmHeadScript }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
       </head>
       <body className="antialiased">
-        <GoogleTagManager />
+        <GoogleTagManagerNoscript />
         {children}
         <DeferredAnalytics />
       </body>
