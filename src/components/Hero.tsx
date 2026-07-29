@@ -15,14 +15,14 @@ export default function Hero() {
           priority
           quality={75}
           sizes="100vw"
-          className="object-cover object-[center_45%] brightness-[1.08] contrast-[1.02]"
+          className="object-cover object-[center_45%] brightness-100 contrast-[1.02] md:brightness-[1.08]"
         />
         <div className="hero-scrim absolute inset-0" aria-hidden />
         <div className="hero-grain absolute inset-0" aria-hidden />
       </div>
 
       <div className="container-site relative flex min-h-[100svh] flex-col justify-end pb-16 pt-28 md:pb-24 md:pt-32">
-        <div className="max-w-3xl">
+        <div className="hero-copy max-w-3xl">
           <p className="mb-4 text-xs uppercase tracking-[0.28em] text-[var(--accent)]">
             Available for hire
           </p>
@@ -45,15 +45,15 @@ export default function Hero() {
             </a>
             <a
               href={siteProfile.cvPdf}
-              className="resume-button btn-secondary w-full text-center sm:w-auto"
+              className="resume-button btn-secondary hero-cta-chip w-full text-center sm:w-auto"
               download
             >
               Download CV
             </a>
-            <a href="#contact" className="btn-ghost">
+            <a href="#contact" className="btn-ghost hero-cta-chip rounded-sm px-3">
               Contact
             </a>
-            <a href="#work" className="btn-ghost">
+            <a href="#work" className="btn-ghost hero-cta-chip rounded-sm px-3">
               Listen
             </a>
           </div>
