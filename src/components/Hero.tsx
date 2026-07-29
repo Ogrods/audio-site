@@ -35,25 +35,31 @@ export default function Hero() {
           <p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--text-muted)] md:text-lg">
             {siteProfile.tagline}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:flex sm:flex-wrap">
             <a
               href={siteProfile.resumePdf}
-              className="resume-button btn-primary w-full text-center sm:w-auto"
+              className="resume-button btn-primary col-span-2 w-full text-center sm:w-auto"
               download
             >
               Download resume
             </a>
             <a
               href={siteProfile.cvPdf}
-              className="resume-button btn-secondary hero-cta-chip w-full text-center sm:w-auto"
+              className="resume-button btn-secondary hero-cta-chip col-span-2 w-full text-center sm:w-auto"
               download
             >
               Download CV
             </a>
-            <a href="#contact" className="btn-ghost hero-cta-chip rounded-sm px-3">
+            <a
+              href="#contact"
+              className="btn-secondary hero-cta-chip w-full rounded-sm text-center sm:w-auto"
+            >
               Contact
             </a>
-            <a href="#work" className="btn-ghost hero-cta-chip rounded-sm px-3">
+            <a
+              href="#work"
+              className="btn-secondary hero-cta-chip w-full rounded-sm text-center sm:w-auto"
+            >
               Listen
             </a>
           </div>

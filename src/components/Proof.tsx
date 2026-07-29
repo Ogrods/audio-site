@@ -35,9 +35,10 @@ function PhotoStrip({
             height={320}
             quality={70}
             className="h-full w-auto max-w-none"
-            sizes="(max-width: 768px) 70vw, 360px"
+            sizes="(max-width: 768px) 200px, 280px"
             draggable={false}
-            loading={eager && i < 3 ? "eager" : "lazy"}
+            decoding="async"
+            loading={eager && i < 8 ? "eager" : "lazy"}
           />
         </div>
       ))}
