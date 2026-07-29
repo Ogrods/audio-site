@@ -60,6 +60,19 @@ export type ProofImage = {
 };
 
 export const proofImages: ProofImage[] = [
+  { src: "/images/proof/g-36.jpg", alt: "Close-up of snare drum and sticks in session" },
+  { src: "/images/proof/g-37.jpg", alt: "Courtyard duo performance with percussion" },
+  { src: "/images/proof/g-38.jpg", alt: "Live percussion performance" },
+  { src: "/images/proof/g-39.jpg", alt: "Percussionist on stage" },
+  { src: "/images/proof/g-40.jpg", alt: "Ensemble performance" },
+  { src: "/images/proof/g-41.jpg", alt: "Live set at The Blue Whale" },
+  { src: "/images/proof/g-42.jpg", alt: "Live music performance" },
+  { src: "/images/proof/g-43.jpg", alt: "Concert percussion setup" },
+  { src: "/images/proof/g-44.jpg", alt: "Tabla session with microphones" },
+  { src: "/images/proof/g-45.jpg", alt: "Percussionist mid-performance" },
+  { src: "/images/proof/g-46.jpg", alt: "Portrait with instruments" },
+  { src: "/images/proof/g-47.jpg", alt: "Live ensemble performance" },
+  { src: "/images/proof/g-48.jpg", alt: "World music ensemble session" },
   { src: "/images/proof/g-01.jpg", alt: "Playing outdoor hand drum" },
   { src: "/images/proof/g-02.jpg", alt: "Percussion performance" },
   { src: "/images/proof/g-03.jpg", alt: "Ensemble rehearsal" },
@@ -256,6 +269,12 @@ export const videos: SiteVideo[] = [
     kind: "youtube",
   },
   {
+    id: "zdlzSCOq078",
+    title: "M O T U S",
+    detail: "Handpan and live processing",
+    kind: "youtube",
+  },
+  {
     id: "Ykh95s9pGjs",
     title: "Purushakara (Live)",
     detail: "Izela - Handbag Factory DTLA",
@@ -291,8 +310,8 @@ export const videos: SiteVideo[] = [
 
 export const aboutParagraphs = [
   "Session and live percussionist with an MFA in Multi-Focus Percussion from CalArts and a BM from The Hartt School. Study includes a residency in Ghana (Dagara Music Center / Dagbe Music Center). I work across classical and contemporary repertoire and world traditions - Latin, African, Brazilian, Indian, Persian, steelpan, and more.",
-  "For 5+ years I was a live accompanist at the USC Glorya Kaufman School of Dance - Contemporary, Afro-Cuban, Partnering, Modern, Hip-Hop, Jazz, Commercial Dance, Dunham Technique, improvisation, and guest clinicians. Instructors I've played for include Desmond Richardson, Dwight Rhoden, Patrick Corbin, Victor Quijada, and the Complexions Contemporary Ballet Summer Intensive. I've also composed and performed original music for Kaufman choreography.",
-  "Other headline credits: West Coast premiere of John Luther Adams's Inuksuit (Ojai, curated by Steven Schick); Hands On'Semble with Rhein Percussion at The Blue Whale; Bella Strings at The Beverly Hilton for King Salman of Saudi Arabia; Capitol Records sessions. Artists and projects include Izela, ZAUB, Sin Color, Kan Wakan, Sofi Mkheyan, Saba Alizadeh, Vinny Golia, and Sulley Imoro.",
+  "For 5+ years I was a live accompanist at the USC Glorya Kaufman School of Dance - Contemporary, Afro-Cuban, Partnering, Modern, Hip-Hop, Jazz, Commercial Dance, Dunham Technique, improvisation, and guest clinicians. Instructors I've played for include Desmond Richardson, Dwight Rhoden, Patrick Corbin, Victor Quijada, and the Complexions Contemporary Ballet Summer Intensive. I've also composed and performed original music for Kaufman choreography, and accompanied at DancerPalooza.",
+  "Other headline credits: West Coast premiere of John Luther Adams's Inuksuit (Ojai, curated by Steven Schick); Hands On'Semble with Rhein Percussion at The Blue Whale; Bella Strings at The Beverly Hilton for King Salman of Saudi Arabia; Capitol Records sessions; Dodger Stadium with Dhara. Artists and projects include Izela, ZAUB, Sin Color, Kan Wakan, Sofi Mkheyan, Saba Alizadeh, Vinny Golia, and Sulley Imoro.",
   "I music-direct, track and mix in Pro Tools, Reaper, Ableton Live, and Logic Pro (MaxMSP for custom tools), and run live sound (FOH / monitors) when the gig calls for it. Teaching and clinics (CalArts, Evergreen) are part of the work.",
 ];
 
@@ -318,10 +337,12 @@ export const services = [
 export const selectedCredits = [
   "CalArts MFA (Multi-Focus Percussion); Hartt BM; Ghana residency (Dagara / Dagbe)",
   "USC Glorya Kaufman School of Dance - live accompanist, 5+ years (Contemporary, Afro-Cuban, Hip-Hop, Jazz, and more; instructors incl. Desmond Richardson, Dwight Rhoden, Patrick Corbin, Victor Quijada; Complexions Contemporary Ballet Summer Intensive)",
+  "DancerPalooza - live accompanist",
   "AGBU Manoukian High School - Faculty, Stage Design and Production (2017-2018); live sound/lighting and events at the AGBU Vatche & Tamar Manoukian Performing Arts Center",
   "John Luther Adams, Inuksuit - West Coast premiere, Ojai Music Festival (curated by Steven Schick)",
   "Hands On'Semble with Rhein Percussion - The Blue Whale",
   "Bella Strings - The Beverly Hilton, for King Salman of Saudi Arabia",
+  "Dodger Stadium - with Dhara",
   "Capitol Records sessions (incl. Cross Pulses, Abuelo; Celia Cruz track selected for mastering)",
   "Izela I; ZAUB; Sin Color; theater pits including The Boy from Oz and Spring Awakening",
 ];
