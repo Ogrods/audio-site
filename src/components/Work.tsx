@@ -65,14 +65,14 @@ export default function Work() {
         </Reveal>
 
         <Reveal delayMs={60} className="mb-16">
-          <div className="flex flex-wrap gap-2 border-b border-white/10 pb-4">
+          <div className="grid grid-cols-2 gap-2 border-b border-white/10 pb-4 md:flex md:flex-wrap">
             {soundCloudGroups.map((g) => (
               <button
                 key={g.id}
                 type="button"
                 aria-pressed={groupId === g.id}
                 onClick={() => selectGroup(g.id)}
-                className={`rounded-sm px-3 py-1.5 text-xs uppercase tracking-[0.14em] transition-colors ${
+                className={`min-h-11 w-full rounded-sm px-3 py-2.5 text-center text-xs uppercase tracking-[0.14em] transition-colors md:min-h-0 md:w-auto md:py-1.5 ${
                   groupId === g.id
                     ? "bg-[var(--accent)] text-[var(--bg)]"
                     : "bg-white/5 text-[var(--text-muted)] hover:text-[var(--text)]"
@@ -144,12 +144,12 @@ export default function Work() {
                   </button>
                 )
               ) : null}
-              <div className="mt-4 flex flex-wrap gap-4 text-sm">
+              <div className="mt-4 flex flex-col gap-1 text-sm sm:flex-row sm:flex-wrap sm:gap-x-5 sm:gap-y-2">
                 <a
                   href="https://soundcloud.com/ogrods"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--accent)] underline-offset-4 hover:underline"
+                  className="inline-flex min-h-11 items-center text-[var(--accent)] underline-offset-4 hover:underline sm:min-h-0 sm:py-0"
                 >
                   Open full SoundCloud
                 </a>
@@ -157,7 +157,7 @@ export default function Work() {
                   href="https://izelamusic.bandcamp.com/album/i-2"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--accent)] underline-offset-4 hover:underline"
+                  className="inline-flex min-h-11 items-center text-[var(--accent)] underline-offset-4 hover:underline sm:min-h-0 sm:py-0"
                 >
                   Izela - album I on Bandcamp
                 </a>
@@ -165,7 +165,7 @@ export default function Work() {
                   href="https://soundcloud.com/zaubnasty"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--accent)] underline-offset-4 hover:underline"
+                  className="inline-flex min-h-11 items-center text-[var(--accent)] underline-offset-4 hover:underline sm:min-h-0 sm:py-0"
                 >
                   ZAUB on SoundCloud
                 </a>
@@ -239,13 +239,13 @@ export default function Work() {
                   )
                 ) : null}
               </div>
-              <div className="mt-4 flex flex-wrap gap-4 text-sm">
+              <div className="mt-5 flex flex-col gap-1 text-sm sm:flex-row sm:flex-wrap sm:gap-x-5 sm:gap-y-2">
                 {activeVideo?.relatedUrl ? (
                   <a
                     href={activeVideo.relatedUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[var(--accent)] underline-offset-4 hover:underline"
+                    className="inline-flex min-h-11 items-center text-[var(--accent)] underline-offset-4 hover:underline sm:min-h-0 sm:py-0"
                   >
                     {activeVideo.relatedLabel ?? "Related link"}
                   </a>
@@ -256,7 +256,7 @@ export default function Work() {
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[var(--accent)] underline-offset-4 hover:underline"
+                    className="inline-flex min-h-11 items-center text-[var(--accent)] underline-offset-4 hover:underline sm:min-h-0 sm:py-0"
                   >
                     {s.label}
                   </a>

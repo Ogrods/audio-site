@@ -71,32 +71,32 @@ export default function Services() {
             <h3 className="mb-3 text-xs uppercase tracking-[0.2em] text-[var(--text)]">
               Tools
             </h3>
-            <p className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
               {toolsClaimed.map((t) => (
                 <span
                   key={t}
-                  className="border border-white/15 px-2.5 py-1 text-xs text-[var(--text-muted)]"
+                  className="w-full border border-white/15 px-2.5 py-2 text-center text-xs text-[var(--text-muted)] sm:w-auto sm:py-1 sm:text-left"
                 >
                   {t}
                 </span>
               ))}
-            </p>
+            </div>
           </div>
           <div>
             <h3 className="mb-3 text-xs uppercase tracking-[0.2em] text-[var(--text)]">
               Studying
             </h3>
-            <p className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
               {toolsLearning.map((t) => (
                 <span
                   key={t}
-                  className="border border-[var(--accent)]/30 px-2.5 py-1 text-xs text-[var(--accent)]"
+                  className="w-full border border-[var(--accent)]/30 px-2.5 py-2 text-center text-xs text-[var(--accent)] sm:w-auto sm:py-1 sm:text-left"
                 >
                   {t}
                 </span>
               ))}
-            </p>
-            <p className="mt-3 text-sm text-[var(--text-muted)]">
+            </div>
+            <p className="mt-4 text-sm text-[var(--text-muted)]">
               Building interactive / game-audio skills through study, jams, and
               GameSoundCon.
             </p>
