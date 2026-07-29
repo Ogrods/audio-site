@@ -99,7 +99,7 @@ export default function QuoteSlideshow() {
         <button
           type="button"
           onClick={() => goTo(index - 1)}
-          className="border border-white/20 px-3 py-1.5 text-xs uppercase tracking-[0.14em] text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
+          className="min-h-11 flex-1 border border-white/20 px-4 py-3 text-xs uppercase tracking-[0.14em] text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] sm:flex-none sm:min-h-0 sm:px-3 sm:py-1.5"
           aria-label="Previous quote"
         >
           Prev
@@ -107,7 +107,7 @@ export default function QuoteSlideshow() {
         <button
           type="button"
           onClick={() => goTo(index + 1)}
-          className="border border-white/20 px-3 py-1.5 text-xs uppercase tracking-[0.14em] text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)]"
+          className="min-h-11 flex-1 border border-white/20 px-4 py-3 text-xs uppercase tracking-[0.14em] text-[var(--text)] hover:border-[var(--accent)] hover:text-[var(--accent)] sm:flex-none sm:min-h-0 sm:px-3 sm:py-1.5"
           aria-label="Next quote"
         >
           Next

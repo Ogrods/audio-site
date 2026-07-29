@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="scroll-mt-16 bg-[var(--bg)] py-20 md:py-28"
+      className="scroll-mt-nav bg-[var(--bg)] py-20 md:py-28"
     >
       <div className="container-site">
         <Reveal className="mb-10 max-w-2xl">
@@ -103,17 +103,17 @@ export default function Services() {
           </div>
         </Reveal>
 
-        <Reveal delayMs={180} className="mt-10 flex flex-wrap gap-3">
+        <Reveal delayMs={180} className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a
             href={siteProfile.resumePdf}
-            className="resume-button btn-primary"
+            className="resume-button btn-primary w-full text-center sm:w-auto"
             download
           >
             Download resume (PDF)
           </a>
           <a
             href={siteProfile.cvPdf}
-            className="resume-button btn-secondary"
+            className="resume-button btn-secondary w-full text-center sm:w-auto"
             download
           >
             Download CV (PDF)

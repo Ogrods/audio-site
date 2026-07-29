@@ -42,6 +42,16 @@ body {
     max(0px, env(safe-area-inset-right));
 }
 
+.scroll-mt-nav {
+  scroll-margin-top: calc(3.5rem + env(safe-area-inset-top, 0px) + 0.5rem);
+}
+
+@media (min-width: 768px) {
+  .scroll-mt-nav {
+    scroll-margin-top: calc(4rem + env(safe-area-inset-top, 0px) + 0.5rem);
+  }
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;

@@ -54,7 +54,7 @@ export default function Nav() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center border border-white/35 bg-black/35 px-3 py-1.5 text-xs uppercase tracking-[0.16em] text-white md:hidden"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center border border-white/35 bg-black/35 px-3 py-2 text-xs uppercase tracking-[0.16em] text-white md:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
@@ -66,14 +66,14 @@ export default function Nav() {
       {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-white/10 bg-[rgba(12,11,10,0.98)] px-4 py-4 md:hidden"
+          className="border-t border-white/10 bg-[rgba(12,11,10,0.98)] py-4 md:hidden"
         >
-          <div className="flex flex-col gap-3">
+          <div className="container-site flex flex-col gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="py-2 text-sm uppercase tracking-[0.16em] text-white/85"
+                className="py-3 text-sm uppercase tracking-[0.16em] text-white/85"
                 onClick={() => setOpen(false)}
               >
                 {link.label}
@@ -81,7 +81,7 @@ export default function Nav() {
             ))}
             <a
               href={siteProfile.resumePdf}
-              className="resume-button btn-nav w-fit"
+              className="resume-button btn-nav mt-2 w-fit"
               download
               onClick={() => setOpen(false)}
             >

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="scroll-mt-16 bg-[var(--bg-elevated)] py-20 md:py-28"
+      className="scroll-mt-nav bg-[var(--bg-elevated)] py-20 md:py-28"
     >
       <div className="container-site grid items-start gap-10 lg:grid-cols-12 lg:gap-14">
         <Reveal className="relative aspect-[4/5] overflow-hidden lg:col-span-5">
@@ -26,8 +26,7 @@ export default function About() {
               About
             </p>
             <h2 className="font-display text-3xl text-[var(--text)] md:text-4xl">
-              Session and live musician - with ears for{" "}
-              <span className="whitespace-nowrap">the room.</span>
+              Session and live musician - with ears for the room.
             </h2>
           </Reveal>
           <div className="mt-6 space-y-5">

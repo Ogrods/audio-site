@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="scroll-mt-16 bg-[var(--bg-elevated)] py-20 md:py-28"
+      className="scroll-mt-nav bg-[var(--bg-elevated)] py-20 md:py-28"
     >
       <div className="container-site">
         <Reveal className="mb-10 max-w-2xl">
@@ -25,16 +25,13 @@ export default function Contact() {
           <p className="mt-4 text-sm text-[var(--text-muted)]">
             {siteProfile.location}
           </p>
-          <div className="mt-8 flex flex-wrap items-center gap-4">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
             <a href={mailto} className="btn-primary w-full text-center sm:w-auto">
               Email {siteProfile.email}
             </a>
-            <a
-              href={mailto}
-              className="font-display text-xl text-[var(--accent)] underline-offset-4 hover:underline"
-            >
+            <p className="text-sm text-[var(--text-muted)] sm:text-base">
               {siteProfile.email}
-            </a>
+            </p>
           </div>
         </Reveal>
       </div>

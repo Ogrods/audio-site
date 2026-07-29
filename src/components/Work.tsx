@@ -49,7 +49,7 @@ export default function Work() {
   }
 
   return (
-    <section id="work" className="scroll-mt-16 bg-[var(--bg)] py-20 md:py-28">
+    <section id="work" className="scroll-mt-nav bg-[var(--bg)] py-20 md:py-28">
       <div className="container-site">
         <Reveal className="mb-10 max-w-2xl">
           <p className="mb-3 text-xs uppercase tracking-[0.24em] text-[var(--accent)]">
@@ -122,7 +122,7 @@ export default function Work() {
                   <button
                     type="button"
                     onClick={() => setScPlaying(true)}
-                    className="flex h-[166px] w-full flex-col items-start justify-center gap-2 border border-white/15 bg-black/40 px-6 text-left transition-colors hover:border-[var(--accent)]"
+                    className="flex h-[166px] w-full flex-col items-start justify-center gap-2 border border-white/15 bg-black/40 px-4 text-left transition-colors hover:border-[var(--accent)] sm:px-6"
                     aria-label={`Load SoundCloud player for ${track.title}`}
                   >
                     <span className="text-xs uppercase tracking-[0.18em] text-[var(--accent)]">
