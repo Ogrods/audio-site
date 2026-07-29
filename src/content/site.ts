@@ -133,6 +133,18 @@ export const soundCloudGroups: SoundCloudGroup[] = [
         artist: "Izela",
         url: "https://soundcloud.com/izelamusic/euclid",
       },
+      {
+        id: "317620120",
+        title: "Ophion",
+        artist: "Izela",
+        url: "https://soundcloud.com/izelamusic/ophion",
+      },
+      {
+        id: "317623731",
+        title: "Molim Té",
+        artist: "Izela",
+        url: "https://soundcloud.com/izelamusic/molim-te",
+      },
     ],
   },
   {
