@@ -23,7 +23,7 @@ export default function Services() {
           </h2>
           <p className="mt-3 text-[var(--text-muted)]">
             Session and live musician work first - with direction and
-            engineering when you need the room covered too.
+            engineering when the gig calls for it.
           </p>
         </Reveal>
 

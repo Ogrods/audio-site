@@ -26,7 +26,7 @@ export default function About() {
               About
             </p>
             <h2 className="font-display text-3xl text-[var(--text)] md:text-4xl">
-              Session and live musician - with ears for the room.
+              Session and live musician for stage, studio, and pit.
             </h2>
           </Reveal>
           <div className="mt-6 space-y-5">
