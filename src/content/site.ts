@@ -299,7 +299,7 @@ export const aboutParagraphs = [
 export const services = [
   {
     title: "Session & live musician",
-    body: "World and classical percussion for studio dates, concerts, festivals, theater pits, and dance-class accompaniment. I read charts, play to click when needed, and stay easy to work with in the room. Kit, snare, timpani, mallets, and hand percussion across Latin, African, Brazilian, Indian, Persian, steelpan, and contemporary repertoire. Five-plus years as live accompanist at USC Kaufman; Capitol sessions, ensemble records, and pit work when the book demands it. I learn the book ahead of the date, stay with the arrangement, and improvise when it helps.",
+    body: "World and classical percussion for studio dates, concerts, festivals, theater pits, and dance-class accompaniment. I read charts, play to click when needed, and stay easy to work with in the room. Kit, snare, timpani, mallets, and hand percussion across Latin, African, Brazilian, Indian, Persian, steelpan, and contemporary repertoire. Five-plus years as live accompanist at USC Kaufman; Capitol sessions, ensemble records, and pit work when the show demands it. I learn the charts ahead of the date, stay with the arrangement, and improvise when it helps.",
   },
   {
     title: "Music direction",
