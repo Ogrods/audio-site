@@ -83,7 +83,7 @@ export default function Work() {
             ))}
           </div>
 
-          <div className="mt-6 grid gap-6 lg:grid-cols-12">
+          <div className="mt-6 grid gap-6 lg:grid-cols-12 lg:items-start">
             <ul className="flex flex-col gap-1 lg:col-span-4">
               {group?.tracks.map((t) => (
                 <li key={t.id}>
@@ -175,10 +175,10 @@ export default function Work() {
         </Reveal>
 
         <Reveal delayMs={100}>
-          <h3 className="mb-4 font-display text-2xl text-[var(--text)]">
+          <h3 className="font-display text-2xl text-[var(--text)]">
             Video
           </h3>
-          <div className="grid gap-6 lg:grid-cols-12">
+          <div className="mt-6 grid gap-6 lg:grid-cols-12 lg:items-start">
             <ul className="flex flex-col gap-1 lg:col-span-4">
               {videos.map((v) => (
                 <li key={v.id}>
@@ -221,7 +221,7 @@ export default function Work() {
                       <img
                         src={`https://i.ytimg.com/vi/${activeVideo.id}/hqdefault.jpg`}
                         alt=""
-                        className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+                        className="h-full w-full scale-110 object-cover opacity-90 transition-opacity group-hover:opacity-100"
                         loading="lazy"
                         decoding="async"
                       />
@@ -239,8 +239,8 @@ export default function Work() {
                   )
                 ) : null}
               </div>
-              {activeVideo?.relatedUrl ? (
-                <p className="mt-3 text-sm">
+              <div className="mt-4 flex flex-wrap gap-4 text-sm">
+                {activeVideo?.relatedUrl ? (
                   <a
                     href={activeVideo.relatedUrl}
                     target="_blank"
@@ -249,22 +249,20 @@ export default function Work() {
                   >
                     {activeVideo.relatedLabel ?? "Related link"}
                   </a>
-                </p>
-              ) : null}
+                ) : null}
+                {siteProfile.social.map((s) => (
+                  <a
+                    key={s.url}
+                    href={s.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[var(--accent)] underline-offset-4 hover:underline"
+                  >
+                    {s.label}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="mt-6 flex flex-wrap gap-4 text-sm text-[var(--text-muted)]">
-            {siteProfile.social.map((s) => (
-              <a
-                key={s.url}
-                href={s.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-[var(--accent)]"
-              >
-                {s.label}
-              </a>
-            ))}
           </div>
         </Reveal>
       </div>
