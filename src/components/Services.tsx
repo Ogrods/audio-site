@@ -22,8 +22,8 @@ export default function Services() {
             What I offer
           </h2>
           <p className="mt-3 text-[var(--text-muted)]">
-            Session and live musician work first - with direction and
-            engineering when the gig calls for it.
+            Session and live musician work, music direction, and session / live
+            engineering.
           </p>
         </Reveal>
 
@@ -97,7 +97,7 @@ export default function Services() {
               ))}
             </div>
             <p className="mt-4 text-sm text-[var(--text-muted)]">
-              Building interactive / game-audio skills through study, jams, and
+              Interactive and game-audio skills through study, jams, and
               GameSoundCon.
             </p>
           </div>

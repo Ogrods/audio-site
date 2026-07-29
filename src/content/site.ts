@@ -4,7 +4,7 @@ export const siteProfile = {
   name: "Dan Ogrodnik",
   title: "Session & Live Musician · Music Director · Session & Live Engineer",
   tagline:
-    "CalArts MFA / Hartt BM. World and classical percussion for sessions, stages, and pits - plus music direction, tracking, and live sound.",
+    "CalArts MFA / Hartt BM. World and classical percussion for sessions, stages, and pits. Music direction, tracking, and live sound.",
   email: "dan@danogrodnik.com",
   phone: "",
   location: "Los Angeles / Crestline, CA",
@@ -13,7 +13,7 @@ export const siteProfile = {
   webdevUrl: "https://www.danogrodnik.com",
   bookingUrl: "",
   contactMessage:
-    "Booking session or live musician work, music direction, or studio / live sound support? Email me - I respond quickly.",
+    "Available for session and live musician work, music direction, and studio / live sound. Email to book.",
   social: [
     { label: "SoundCloud", url: "https://soundcloud.com/ogrods" },
     { label: "Instagram", url: "https://instagram.com/ogrods" },
@@ -320,28 +320,28 @@ export const videos: SiteVideo[] = [
 ];
 
 export const aboutParagraphs = [
-  "Session and live percussionist with an MFA in Multi-Focus Percussion from CalArts and a BM from The Hartt School. Study includes a residency in Ghana (Dagara Music Center / Dagbe Music Center). I work across classical and contemporary repertoire and world traditions - Latin, African, Brazilian, Indian, Persian, steelpan, and more.",
-  "For 5+ years I was a live accompanist at the USC Glorya Kaufman School of Dance - Contemporary, Afro-Cuban, Partnering, Modern, Hip-Hop, Jazz, Commercial Dance, Dunham Technique, improvisation, and guest clinicians. Instructors I've played for include Desmond Richardson, Dwight Rhoden, Patrick Corbin, Victor Quijada, and the Complexions Contemporary Ballet Summer Intensive. I've also composed and performed original music for Kaufman choreography, and accompanied at DancerPalooza.",
-  "Other headline credits: West Coast premiere of John Luther Adams's Inuksuit (Ojai, curated by Steven Schick); Hands On'Semble with Rhein Percussion at The Blue Whale; Bella Strings at The Beverly Hilton for King Salman of Saudi Arabia; Capitol Records sessions; Dodger Stadium with Dhara. Artists and projects include Izela, ZAUB, Sin Color, Kan Wakan, Sofi Mkheyan, Saba Alizadeh, Vinny Golia, and Sulley Imoro.",
-  "I music-direct, track and mix in Pro Tools, Reaper, Ableton Live, and Logic Pro (MaxMSP for custom tools), and run live sound (FOH / monitors) when the gig calls for it. Teaching and clinics (CalArts, Evergreen) are part of the work.",
+  "Session and live percussionist with an MFA in Multi-Focus Percussion from CalArts and a BM from The Hartt School. Study includes a residency in Ghana (Dagara Music Center / Dagbe Music Center). Classical and contemporary repertoire plus world traditions - Latin, African, Brazilian, Indian, Persian, steelpan, and more.",
+  "For 5+ years I was a live accompanist at the USC Glorya Kaufman School of Dance - Contemporary, Afro-Cuban, Partnering, Modern, Hip-Hop, Jazz, Commercial Dance, Dunham Technique, improvisation, and guest clinicians. Instructors include Desmond Richardson, Dwight Rhoden, Patrick Corbin, Victor Quijada, and the Complexions Contemporary Ballet Summer Intensive. Original music for Kaufman choreography; accompanist at DancerPalooza.",
+  "Credits include the West Coast premiere of John Luther Adams's Inuksuit (Ojai, curated by Steven Schick); Hands On'Semble with Rhein Percussion at The Blue Whale; Bella Strings at The Beverly Hilton for King Salman of Saudi Arabia; Capitol Records sessions; Dodger Stadium with Dhara. Artists and projects include Izela, ZAUB, Sin Color, Kan Wakan, Sofi Mkheyan, Saba Alizadeh, Vinny Golia, and Sulley Imoro.",
+  "Music direction, tracking, and mixing in Pro Tools, Reaper, Ableton Live, and Logic Pro (MaxMSP for custom tools). Live sound for FOH and monitors. Teaching and clinics at CalArts and Evergreen.",
 ];
 
 export const services = [
   {
     title: "Session & live musician",
-    body: "World and classical percussion for studio dates, remote recording (inquire for rates), concerts, festivals, theater pits, and dance-class accompaniment. I read charts, play to click when needed, and stay easy to work with in the room. Kit, snare, timpani, mallets, and hand percussion across Latin, African, Brazilian, Indian, Persian, steelpan, and contemporary repertoire. Five-plus years as live accompanist at USC Kaufman; Capitol sessions, ensemble records, and pit work when the show demands it. I learn the charts ahead of the date, stay with the arrangement, and improvise appropriately.",
+    body: "World and classical percussion for studio dates, remote recording (inquire for rates), concerts, festivals, theater pits, and dance-class accompaniment. Chart reading and click-track work. Kit, snare, timpani, mallets, and hand percussion across Latin, African, Brazilian, Indian, Persian, steelpan, and contemporary repertoire. Five-plus years as live accompanist at USC Kaufman; Capitol sessions, ensemble records, and theater pit credits. Charts prepared ahead of the date; arrangement-faithful playing with appropriate improvisation.",
   },
   {
     title: "Music direction",
-    body: "Musical direction for rehearsals and show night: chart preparation, cue maps, tempo maps, and calling the room so the band and tech stay aligned. Ableton Live show playback for click-tracked performances: programming click, count-ins, spoken/MIDI cues, and multitrack backing stems with dedicated sends to FOH and monitors. Live laptop performance management: showfile structure, scene/clip triggering, session automation, and reliable onstage playback so the band stays with the click for the whole show.",
+    body: "Musical direction for rehearsals and show night: chart preparation, cue maps, tempo maps, and calling cues so band and tech stay aligned. Ableton Live show playback for click-tracked performances: click, count-ins, spoken/MIDI cues, and multitrack backing stems with dedicated sends to FOH and monitors. Live laptop showfile management: scene/clip triggering, session automation, and reliable onstage playback for the full set.",
   },
   {
     title: "Session & live engineering",
-    body: "Tracking and mixing for studio and ensemble sessions in Pro Tools, Reaper, Ableton Live, and Logic Pro, with MaxMSP when a custom tool or process helps the take. Live sound for FOH and monitors: gain structure, clear cue mixes, and keep the mix usable when the room gets loud. Load-in, stage plot support, and production backup from years on CalArts / theater crews and PAC-scale school venues. Useful when one person needs to cover both chairs.",
+    body: "Tracking and mixing for studio and ensemble sessions in Pro Tools, Reaper, Ableton Live, and Logic Pro; MaxMSP for custom tools and processes. Live sound for FOH and monitors: gain structure, clear cue mixes, and mixes that hold under loud stage conditions. Load-in, stage plot support, and production backup from CalArts / theater crews and PAC-scale school venues. Available as a single hire for session and live chairs.",
   },
   {
     title: "Teaching & clinics",
-    body: "Private studio (100+ students) and classroom teaching across drum set, snare, timpani, mallets, and hand drums, plus theory when it serves the player. Guest masterclasses and clinics including CalArts Percussion Forum and school programs; prior college lecturing in Music Theory, Musicianship, and Rhythm Skills. Curriculum that builds technique, listening, and ensemble habits. Built for players who want lessons from someone still on gigs.",
+    body: "Private studio (100+ students) and classroom teaching across drum set, snare, timpani, mallets, and hand drums, with theory as required. Guest masterclasses and clinics including CalArts Percussion Forum and school programs; prior college lecturing in Music Theory, Musicianship, and Rhythm Skills. Curriculum focused on technique, listening, and ensemble habits.",
   },
 ];
 
