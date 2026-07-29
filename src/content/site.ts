@@ -4,7 +4,7 @@ export const siteProfile = {
   name: "Dan Ogrodnik",
   title: "Session & Live Musician · Music Director · Session & Live Engineer",
   tagline:
-    "CalArts MFA / Hartt BM. World and classical percussion for sessions, stages, and pits - with music direction and tracking / live sound when the room needs it.",
+    "CalArts MFA / Hartt BM. World and classical percussion for sessions, stages, and pits - plus music direction, tracking, and live sound.",
   email: "dan@danogrodnik.com",
   phone: "",
   location: "Los Angeles / Crestline, CA",
