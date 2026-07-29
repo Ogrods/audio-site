@@ -307,7 +307,7 @@ export const services = [
   },
   {
     title: "Session & live engineering",
-    body: "Tracking and mixing for percussion-forward and ensemble sessions in Pro Tools, Reaper, Ableton Live, and Logic Pro, with MaxMSP when a custom tool or process helps the take. Live sound for FOH and monitors: gain structure, clear cue mixes, and keep the mix usable when the room gets loud. Load-in, stage plot support, and production backup from years on CalArts / theater crews and PAC-scale school venues. Useful when one person needs to cover both chairs.",
+    body: "Tracking and mixing for studio and ensemble sessions in Pro Tools, Reaper, Ableton Live, and Logic Pro, with MaxMSP when a custom tool or process helps the take. Live sound for FOH and monitors: gain structure, clear cue mixes, and keep the mix usable when the room gets loud. Load-in, stage plot support, and production backup from years on CalArts / theater crews and PAC-scale school venues. Useful when one person needs to cover both chairs.",
   },
   {
     title: "Teaching & clinics",
